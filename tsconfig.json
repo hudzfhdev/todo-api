@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2025",           // Modern JS output
+    "module": "nodenext",         // Modern module resolution
+    "moduleResolution": "nodenext",
+    "strict": true,               // Enable all strict type-checking
+    "esModuleInterop": true,      // Fixes compatibility with CommonJS
+    "skipLibCheck": true,         // Speeds up builds
+    "outDir": "./dist",           // Output compiled files here
+    "rootDir": "./src",           // Where your TS files live
+    "sourceMap": true,            // Helpful for debugging
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],        // Compile everything in src
+  "exclude": ["node_modules"] ,   // Don't compile libraries
+}
